@@ -8,7 +8,7 @@ class FlaskrTestCase(unittest.TestCase):
         app.config['TESTING'] = True
         self.app = app.test_client()
 
-    def tet_outputs(self):
+    def test_outputs(self):
         rv = self.app.get('/outputs')
         s = str(rv.data)
         ','.join(SUPPORTED) in s
