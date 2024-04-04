@@ -7,4 +7,4 @@ run:
 	python main.py
 .PHONY: test
 test:
-
+	PYTHONPATN=. py.test --verbose -s
